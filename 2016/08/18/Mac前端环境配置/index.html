@@ -25,7 +25,7 @@ control + ~
 
 control + ~
 把以下代码段复制到对应位置        1import urllib.request,os,hashlib; h = &apos;2915d1851351e5ee549c20394736b442&apos; + &apos;8bc59f460fa1548d1514676163dafc88&apos;; pf = &apos;Packag">
-<meta property="og:updated_time" content="2016-08-23T07:38:16.000Z">
+<meta property="og:updated_time" content="2016-08-24T01:45:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac前端环境配置">
 <meta name="twitter:description" content="sublime
@@ -235,7 +235,7 @@ control + ~
 <li><p>发布到Github</p>
 <ol>
 <li><p>静态化处理</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate || hexo g</div></pre></td></tr></table></figure>
 </li>
 <li><p>发布</p>
 <ol>
@@ -247,9 +247,12 @@ control + ~
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 </li>
 <li><p>进行命令行部署</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy || hexo d</div></pre></td></tr></table></figure>
 </li>
 </ol>
+</li>
+<li><p>发布之后的修改只需</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean </div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
@@ -258,7 +261,7 @@ control + ~
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/Aquarius1993/blog/blog/2016/08/18/Mac前端环境配置/" data-id="cis76js8g000028s6ckqnj4fh" class="article-share-link">Share</a>
+      <a data-url="https://github.com/Aquarius1993/blog/blog/2016/08/18/Mac前端环境配置/" data-id="cis88p5030000uxs6m902jbvp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/环境配置/">环境配置</a></li></ul>
