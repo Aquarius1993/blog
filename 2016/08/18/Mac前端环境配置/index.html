@@ -15,8 +15,8 @@
 
 使用shift+command+p前提：
 
-control + ~
-把以下代码段复制到对应位置                1234567 import urllib.request,os,hashlib;h = &#39;2915d1851351e5ee549c">
+control + ~，调出console
+把以下代码段复制到console并enter执行            12345import urllib.request,os; pf = &#39;Package Cont">
     
     
     
@@ -44,7 +44,7 @@ control + ~
 				<h1 class="site-name"><a href="/blog/" title="aquarius1993">aquarius1993</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -61,7 +61,7 @@ control + ~
 					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:github.com/Aquarius1993/blog">
 					</form>
 					
@@ -85,7 +85,7 @@ control + ~
     </p>
   <p class="article-time">
     <time datetime="2016-08-18T02:11:23.000Z" itemprop="datePublished">2016-08-18</time>
-    Updated:<time datetime="2016-08-25T10:15:24.000Z" itemprop="dateModified">2016-08-25</time>
+    更新日期:<time datetime="2016-08-25T10:20:34.000Z" itemprop="dateModified">2016-08-25</time>
     
   </p>
 </header>
@@ -93,7 +93,7 @@ control + ~
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#sublime"><span class="toc-number">1.</span> <span class="toc-text">sublime</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nvm"><span class="toc-number">2.</span> <span class="toc-text">nvm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git"><span class="toc-number">3.</span> <span class="toc-text">git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass"><span class="toc-number">4.</span> <span class="toc-text">sass</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#webapck"><span class="toc-number">4.1.</span> <span class="toc-text">webapck</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grunt"><span class="toc-number">4.2.</span> <span class="toc-text">grunt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gulp"><span class="toc-number">4.3.</span> <span class="toc-text">gulp</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx"><span class="toc-number">5.</span> <span class="toc-text">nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mongodb"><span class="toc-number">6.</span> <span class="toc-text">mongodb</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo（前提是已经安装Xcode和git）"><span class="toc-number">7.</span> <span class="toc-text">hexo（前提是已经安装Xcode和git）</span></a></li></ol>
 		</div>
 		
@@ -103,8 +103,8 @@ control + ~
 <ol>
 <li><p>使用shift+command+p<br>前提：</p>
 <ol>
-<li>control + ~</li>
-<li>把以下代码段复制到对应位置                <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> import urllib.request,os,hashlib;</div><div class="line">h = <span class="string">'2915d1851351e5ee549c20394736b442'</span> + <span class="string">'8bc59f460fa1548d1514676163dafc88'</span>;</div><div class="line"> pf = <span class="string">'Package Control.sublime-package'</span>; </div><div class="line"> ipp = sublime.installed_packages_path();                                                   urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );</div><div class="line"> by = urllib.request.urlopen( <span class="string">'http://packagecontrol.io/'</span> + pf.replace(<span class="string">' '</span>, <span class="string">'%20'</span>)).read(); </div><div class="line"> dh = hashlib.sha256(by).hexdigest(); </div><div class="line"> <span class="built_in">print</span>(<span class="string">'Error validating download (got %s instead of %s), please try               manual install'</span> % (dh, h)) <span class="keyword">if</span> dh != h <span class="keyword">else</span> open(os.path.join( ipp, pf), <span class="string">'wb'</span> ).write(by)</div></pre></td></tr></table></figure>
+<li>control + ~，调出console</li>
+<li>把以下代码段复制到console并enter执行            <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os; </div><div class="line">pf = <span class="string">'Package Control.sublime-package'</span>; </div><div class="line">ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); </div><div class="line">open(os.path.join(ipp, pf), <span class="string">'wb'</span>).</div><div class="line">write(urllib.request.urlopen( <span class="string">'http://sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read())</div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
@@ -133,7 +133,8 @@ control + ~
 <li><p>重启终端: </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm ls-remote</div></pre></td></tr></table></figure>
 </li>
-<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">install: nvm install v5.10.1</div><div class="line">```	</div><div class="line">	5. </div><div class="line">``` bash</div><div class="line">use: nvm use v5.10.1</div></pre></td></tr></table></figure>
+<li><p>安装node</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">nvm install v5.10.1</div><div class="line">```	</div><div class="line">	5. 切换node版本</div><div class="line">``` bash</div><div class="line">nvm use v5.10.1</div></pre></td></tr></table></figure>
 </li>
 <li><p>通过npm安装cnpm</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install cnpm</div></pre></td></tr></table></figure>
@@ -293,20 +294,20 @@ control + ~
 </section>
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#sublime"><span class="toc-number">1.</span> <span class="toc-text">sublime</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nvm"><span class="toc-number">2.</span> <span class="toc-text">nvm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git"><span class="toc-number">3.</span> <span class="toc-text">git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sass"><span class="toc-number">4.</span> <span class="toc-text">sass</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#webapck"><span class="toc-number">4.1.</span> <span class="toc-text">webapck</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grunt"><span class="toc-number">4.2.</span> <span class="toc-text">grunt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gulp"><span class="toc-number">4.3.</span> <span class="toc-text">gulp</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx"><span class="toc-number">5.</span> <span class="toc-text">nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mongodb"><span class="toc-number">6.</span> <span class="toc-text">mongodb</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo（前提是已经安装Xcode和git）"><span class="toc-number">7.</span> <span class="toc-text">hexo（前提是已经安装Xcode和git）</span></a></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Categories</p>
+	<p class="asidetitle">分类</p>
 		<ul>
 		
 			<li><a href="/blog/categories/笔记/" title="笔记">笔记<sup>1</sup></a></li>
@@ -317,7 +318,7 @@ control + ~
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			<li><a href="/blog/tags/Mac/" title="Mac">Mac<sup>1</sup></a></li>
@@ -331,7 +332,7 @@ control + ~
 
 
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
