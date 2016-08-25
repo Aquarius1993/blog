@@ -16,7 +16,7 @@
 使用shift+command+p前提：
 
 control + ~，调出console
-把以下代码段复制到console并enter执行            12345import urllib.request,os; pf = &#39;Package Cont">
+把以下代码段复制到console并enter执行            123456import urllib.request,os; pf = &#39;Package Con">
     
     
     
@@ -85,7 +85,7 @@ control + ~，调出console
     </p>
   <p class="article-time">
     <time datetime="2016-08-18T02:11:23.000Z" itemprop="datePublished">2016-08-18</time>
-    Updated:<time datetime="2016-08-25T10:23:46.000Z" itemprop="dateModified">2016-08-25</time>
+    Updated:<time datetime="2016-08-25T10:24:25.000Z" itemprop="dateModified">2016-08-25</time>
     
   </p>
 </header>
@@ -104,7 +104,7 @@ control + ~，调出console
 <li><p>使用shift+command+p<br>前提：</p>
 <ol>
 <li>control + ~，调出console</li>
-<li>把以下代码段复制到console并enter执行            <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os; </div><div class="line">pf = <span class="string">'Package Control.sublime-package'</span>; </div><div class="line">ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); </div><div class="line">open(os.path.join(ipp, pf), <span class="string">'wb'</span>).</div><div class="line">write(urllib.request.urlopen( <span class="string">'http://sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read())</div></pre></td></tr></table></figure>
+<li>把以下代码段复制到console并enter执行            <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os; </div><div class="line">pf = <span class="string">'Package Control.sublime-package'</span>; </div><div class="line">ipp = sublime.installed_packages_path(); urllib.request.install_opener( </div><div class="line">urllib.request.build_opener( urllib.request.ProxyHandler()) ); </div><div class="line">open(os.path.join(ipp, pf), <span class="string">'wb'</span>).</div><div class="line">write(urllib.request.urlopen( <span class="string">'http://sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read())</div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
