@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="https://github.com/Aquarius1993/blog/"/>
-  <updated>2016-08-26T09:14:07.000Z</updated>
+  <updated>2016-08-26T09:15:02.000Z</updated>
   <id>https://github.com/Aquarius1993/blog/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://github.com/Aquarius1993/blog/2016/08/26/hexo%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BAblog/"/>
     <id>https://github.com/Aquarius1993/blog/2016/08/26/hexo在github上搭建blog/</id>
     <published>2016-08-26T09:01:40.000Z</published>
-    <updated>2016-08-26T09:14:07.000Z</updated>
+    <updated>2016-08-26T09:15:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id="hexo（前提是已经安装Xcode和git）"><a href="#hexo（前提是已经安装Xcode和git）" class="headerlink" title="hexo（前提是已经安装Xcode和git）"></a>hexo（前提是已经安装Xcode和git）</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
 <h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init nodejsHexoB<span class="built_in">log</span></div></pre></td></tr></table></figure>
 <h3 id="进入项目，创建新笔记"><a href="#进入项目，创建新笔记" class="headerlink" title="进入项目，创建新笔记"></a>进入项目，创建新笔记</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">'Mac 前端环境配置'</span></div></pre></td></tr></table></figure>
