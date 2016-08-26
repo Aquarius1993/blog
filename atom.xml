@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[aquarius1993]]></title>
+  
+  <link href="/blog/atom.xml" rel="self"/>
+  <link href="https://github.com/Aquarius1993/blog/"/>
+  <updated>2016-08-23T07:22:28.000Z</updated>
+  <id>https://github.com/Aquarius1993/blog/</id>
+  
+  <author>
+    <name><![CDATA[aquarius1993]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="https://github.com/Aquarius1993/blog/2016/08/23/hello-world/"/>
+    <id>https://github.com/Aquarius1993/blog/2016/08/23/hello-world/</id>
+    <published>2016-08-23T07:22:28.000Z</published>
+    <updated>2016-08-23T07:22:28.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Mac前端环境配置]]></title>
+    <link href="https://github.com/Aquarius1993/blog/2016/08/18/Mac%E5%89%8D%E7%AB%AF%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>https://github.com/Aquarius1993/blog/2016/08/18/Mac前端环境配置/</id>
+    <published>2016-08-18T02:11:23.000Z</published>
+    <updated>2016-08-26T02:14:36.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><ol>
+<li>下载一个版本</li>
+<li><p>安装插件</p>
+<ol>
+<li><p>使用shift+command+p<br>前提：</p>
+<ol>
+<li>control + ~，调出console</li>
+<li>把以下代码段复制到console并enter执行            <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os; </div><div class="line">pf = <span class="string">'Package Control.sublime-package'</span>; </div><div class="line">ipp = sublime.installed_packages_path(); urllib.request.install_opener( </div><div class="line">urllib.request.build_opener( urllib.request.ProxyHandler()) ); </div><div class="line">open(os.path.join(ipp, pf), <span class="string">'wb'</span>).</div><div class="line">write(urllib.request.urlopen( <span class="string">'http://sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read())</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>直接copy下载好的包(copy到’/Users/liheyao/Library/Application\ Support/Sublime\ Text\ 3/Packages<br>‘路径下)</p>
+</li>
+</ol>
+</li>
+<li>常用的插件<ol>
+<li>JsFormat: ctrl+alt+F 格式化js</li>
+<li>CssComb: ctrl +shift + c格式化css（依赖node）</li>
+<li><a href="http://www.cnblogs.com/hykun/p/sublimeText3.html" target="_blank" rel="external">查看更多</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h2><p>####安装: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash</div></pre></td></tr></table></figure>
+<p>####配置环境变量</p>
+<ol>
+<li><p>终端: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim ~/.bash_profile</div></pre></td></tr></table></figure>
+</li>
+<li><p>复制代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">"<span class="variable">$HOME</span>/.nvm"</span></div><div class="line">[ <span class="_">-s</span> <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> ] &amp;&amp; . <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> <span class="comment"># This loads nvm</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>重启终端:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm ls-remote</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装node    </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm install v5.10.1</div></pre></td></tr></table></figure>
+</li>
+<li><p>切换node版本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm use v5.10.1</div></pre></td></tr></table></figure>
+</li>
+<li><p>通过npm安装cnpm    </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install cnpm</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><ol>
+<li><p>终端: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen</div></pre></td></tr></table></figure>
+</li>
+<li><p>终端: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ls ~/.ssh</div></pre></td></tr></table></figure>
+</li>
+<li><p>终端: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">open ~/.ssh</div></pre></td></tr></table></figure>
+</li>
+<li><p>复制 id_rsa.pub 内容</p>
+</li>
+</ol>
+<h2 id="sass"><a href="#sass" class="headerlink" title="sass"></a>sass</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gem install sass</div></pre></td></tr></table></figure>
+<h3 id="webapck"><a href="#webapck" class="headerlink" title="webapck"></a>webapck</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nam install webpack -g</div></pre></td></tr></table></figure>
+<p>####使用<br>    使用的时候还需要install到项目</p>
+<h2 id="grunt"><a href="#grunt" class="headerlink" title="grunt"></a>grunt</h2><ol>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nam install grunt -g</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用<br> 使用的时候还需要install到项目    </p>
+</li>
+</ol>
+<h2 id="gulp"><a href="#gulp" class="headerlink" title="gulp"></a>gulp</h2><ol>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nam install gulp -g</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用：使用的时候还需要install到项目    </p>
+</li>
+</ol>
+<h2 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h2><ol>
+<li><p>安装brew</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/bin/ruby <span class="_">-e</span> <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>安装nginx    </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install nginx</div></pre></td></tr></table></figure>
+</li>
+<li><p>打开安装路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">open /usr/<span class="built_in">local</span>/etc/nginx</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改配置文件 nginx.conf</p>
+</li>
+<li><p>启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo  /usr/<span class="built_in">local</span>/bin/nginx</div></pre></td></tr></table></figure>
+</li>
+<li><p>关闭</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo  /usr/<span class="built_in">local</span>/bin/nginx <span class="_">-s</span> stop</div></pre></td></tr></table></figure>
+</li>
+<li><p>重启</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo  /usr/<span class="built_in">local</span>/bin/nginx <span class="_">-s</span> reload</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>或者<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo  /usr/<span class="built_in">local</span>/bin/nginx <span class="_">-s</span> stop &amp;&amp; sudo  /usr/<span class="built_in">local</span>/bin/nginx</div></pre></td></tr></table></figure></p>
+<h2 id="mongodb"><a href="#mongodb" class="headerlink" title="mongodb"></a>mongodb</h2><ol>
+<li><p>更新brew</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew update</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install mongodb</div></pre></td></tr></table></figure>
+</li>
+<li><p>启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mongod --config /usr/<span class="built_in">local</span>/etc/mongod.conf</div><div class="line">mongo</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="hexo（前提是已经安装Xcode和git）"><a href="#hexo（前提是已经安装Xcode和git）" class="headerlink" title="hexo（前提是已经安装Xcode和git）"></a>hexo（前提是已经安装Xcode和git）</h2><ol>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建项目</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init nodejsHexoB<span class="built_in">log</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>进入项目，创建新笔记</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">'Mac 前端环境配置'</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>启动,在 localhost:4000 打开</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
+</li>
+<li><p>发布到Github</p>
+<ol>
+<li><p>静态化处理</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate || hexo g</div></pre></td></tr></table></figure>
+</li>
+<li><p>发布</p>
+<ol>
+<li>在Github上新建一个项目（同名）</li>
+<li><p>编辑全局配置文件: _config.yml,找到url,设置url和root,deploy部分，设置Github的项目地址</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">url: https://github.com/Aquarius1993/nodeHexoBlog.github.io</div><div class="line">root: /nodeHexoBlog.github.io</div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@github.com:Aquarius1993/nodeHexoBlog.github.io.git</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装hexo-deployer-git插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>进行命令行部署</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy || hexo d</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>发布之后的修改只需</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean </div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>更换主题（以pacman为例）</p>
+<ol>
+<li><p>下载主题</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/A-limon/pacman.git themes/pacman</div></pre></td></tr></table></figure>
+</li>
+<li><p>更改项目根目录下的_config.yml文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: pacman</div></pre></td></tr></table></figure>
+</li>
+<li><p>更新pacman主题</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/pacman</div><div class="line">git pull</div></pre></td></tr></table></figure>
+</li>
+<li><p>更改pacman的_partial/layout/pacman/header.ejs,不然导航栏的链接地址错误</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;nav class=<span class="string">"animated"</span>&gt;</div><div class="line">	&lt;ul&gt;</div><div class="line">		&lt;% <span class="keyword">for</span> (var i <span class="keyword">in</span> theme.menu)&#123; %&gt;</div><div class="line">		&lt;li&gt;</div><div class="line">			&lt;a href=<span class="string">"&lt;%- url_for(theme.menu[i]) %&gt;"</span>&gt;&lt;%= i %&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">			&lt;% &#125; %&gt;</div><div class="line">		&lt;li&gt;</div><div class="line">		........</div></pre></td></tr></table></figure>
+</li>
+<li><p>加评论功能，修改pacman的_config.yml文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">duoshuo: </div><div class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>  <span class="comment">## duoshuo.com</span></div><div class="line">  short_name:    <span class="comment">## duoshuo short name.</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="sublime"><a href="#sublime" class="headerlink" title="sublime"></a>sublime</h2><ol>
+<li>下载一个版本</li>
+<li><p>安装插件</p>
+<ol>
+<li><p>使用sh]]>
+    </summary>
+    
+      <category term="环境配置" scheme="https://github.com/Aquarius1993/blog/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="Mac" scheme="https://github.com/Aquarius1993/blog/tags/Mac/"/>
+    
+      <category term="前端" scheme="https://github.com/Aquarius1993/blog/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="笔记" scheme="https://github.com/Aquarius1993/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
